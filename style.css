@@ -1,0 +1,203 @@
+/* General/Global settings */
+
+:root {
+  --primary-c: #c72727;
+  --secondary-c: #f99500;
+  --lighter-c: #f3f3f3;
+  --darker-c: #333;
+  --max-width: 110rem;
+  --entertaiment-c: #a66bbe;
+  --technology-c: #009cff;
+  --whiteish-c: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 62.5%; */
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1.5;
+  background-color: var(--lighter-c);
+}
+
+a {
+  color: var(--darker-c);
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Staatliches", cursive;
+  margin-bottom: 0.55rem;
+  line-height: 1.3;
+}
+
+/* Reutilisable */
+
+.container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+.category {
+  display: inline-block;
+  color: var(--whiteish-c);
+  font-size: 0.55rem;
+  text-transform: uppercase;
+  padding: 0.4rem 0.6rem;
+  border-radius: 15px;
+  margin-bottom: 0.2rem;
+  font-weight: bold;
+}
+
+.category-sports {
+  background: var(--secondary-c);
+}
+
+.category-entertaiment {
+  background: var(--entertaiment-c);
+}
+
+.category-tech {
+  background: var(--technology-c);
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  background: var(--darker-c);
+  color: var(--whiteish-c);
+  padding: 0.5rem 1.5rem;
+}
+
+.btn-lighter {
+  background: var(--lighter-c);
+}
+
+.btn-primary {
+  background: var(--primary-c);
+}
+
+.btn-secondary {
+  background: var(--secondary-c);
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+/* Navigation Bar */
+
+.main-nav {
+  background: var(--whiteish-c);
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.nav-container {
+  display: grid;
+  grid-template-columns: 6fr 3fr 2fr;
+  padding: 1rem;
+  align-items: center;
+}
+
+.logo {
+  width: 18rem;
+  padding-left: 2rem;
+}
+
+.utility-bar {
+  justify-self: end;
+  display: flex;
+}
+
+.utility-bar a {
+  padding: 0.75rem;
+  font-weight: bold;
+}
+
+.utility-bar a.current {
+  background: var(--primary-c);
+  color: var(--whiteish-c);
+}
+
+.utility-bar a:hover {
+  background: rgb(133, 129, 129);
+  /* color: var(--darker-c); */
+}
+
+.social {
+  justify-self: center;
+}
+
+.social i {
+  color: #777;
+  margin-right: 0.8rem;
+}
+
+/* Hero Section */
+
+.hero {
+  color: var(--whiteish-c);
+  background: var(--darker-c);
+  padding: 2rem;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  background-image: url(/images/featured.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.hero-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.hero-content {
+  z-index: 1;
+}
+
+.hero-content p {
+  margin-bottom: 1rem;
+}
