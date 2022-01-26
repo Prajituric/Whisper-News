@@ -106,7 +106,6 @@ p {
 .btn-secondary {
   background: var(--secondary-c);
 }
-
 .btn:hover {
   opacity: 0.9;
 }
@@ -115,6 +114,7 @@ p {
   display: block;
   width: 100%;
   text-align: center;
+  transition: all 0.5s ease;
 }
 
 .card {
@@ -191,8 +191,10 @@ p {
 }
 
 .utility-bar a {
+  transition: all 0.3s ease;
   padding: 0.75rem;
   font-weight: bold;
+  border-radius: 15px;
 }
 
 .utility-bar a.current {
@@ -329,4 +331,42 @@ p {
 
 .padding-footer {
   padding: 2rem 0 0 0;
+}
+
+/* Creating About Page */
+
+.page-container {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  grid-gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.page-container > *:first-child {
+  grid-row: 1 / span 3;
+}
+
+.btn-h:hover {
+  background: var(--whiteish-c);
+  color: var(--darker-c);
+  font-weight: bold;
+  border-radius: 30px;
+}
+
+.fa-youtube:hover {
+  color: #ff0000;
+  transition: all 0.3s ease;
+}
+.fa-facebook:hover {
+  color: #3b5998;
+  transition: all 0.3s ease;
+}
+.fa-twitter:hover {
+  color: #1da1f2;
+  transition: all 0.3s ease;
+}
+
+.fa-instagram:hover {
+  color: #c13584;
+  transition: all 0.3s ease;
 }
