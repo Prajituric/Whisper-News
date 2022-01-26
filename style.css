@@ -370,3 +370,29 @@ p {
   color: #c13584;
   transition: all 0.3s ease;
 }
+
+.large-heading {
+  font-size: 3rem;
+}
+
+/* Article Page */
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eee;
+  padding: 0.5rem;
+}
+
+.category {
+  margin-top: 0.4rem;
+}
+
+.fa-user {
+  padding-right: 0.5rem;
+}
+
+.fa-chevron-right {
+  padding-right: 0.5rem;
+}
