@@ -51,6 +51,10 @@ h6 {
   line-height: 1.3;
 }
 
+p {
+  margin: 0.5rem 0;
+}
+
 /* Reutilisable */
 
 .container {
@@ -270,4 +274,59 @@ h6 {
   grid-template-columns: repeat(2, 1fr);
   grid-column: 2 / span 2;
   align-items: center;
+}
+
+/* Footer Section */
+
+.main-footer {
+  background: var(--darker-c);
+  color: var(--whiteish-c);
+}
+
+.main-footer a {
+  color: var(--whiteish-c);
+}
+
+.footer-logo {
+  width: 15rem;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.5rem;
+}
+
+.footer-container input[type="email"] {
+  width: 90%;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-container input[type="submit"] {
+  width: 90%;
+}
+
+.list li {
+  padding: 0.5rem 0;
+  border-bottom: #555 solid 1px;
+  width: 90%;
+}
+
+.list li a:hover {
+  color: var(--primary-c);
+}
+
+.copyright {
+  background: #444;
+  grid-column: 1 / span 4;
+  padding: 0.5rem;
+  margin: 1rem 0 0 0;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  font-size: 0.75rem;
+}
+
+.padding-footer {
+  padding: 2rem 0 0 0;
 }
