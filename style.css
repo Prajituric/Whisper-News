@@ -113,6 +113,53 @@ h6 {
   text-align: center;
 }
 
+.card {
+  background: var(--whiteish-c);
+  padding: 1rem;
+}
+
+.darker-bg {
+  background: var(--darker-c);
+  color: var(--whiteish-c);
+}
+
+.primary-bg {
+  background: var(--primary-c);
+  color: var(--whiteish-c);
+}
+
+.secondary-bg {
+  background: var(--secondary-c);
+  color: var(--whiteish-c);
+}
+
+.padding-1 {
+  padding: 1.5rem 0;
+}
+
+.padding-2 {
+  padding: 2rem 0;
+}
+
+.padding-3 {
+  padding: 3rem 0;
+}
+
+.darker-bg h1,
+.darker-bg h2,
+.darker-bg h3,
+.darker-bg a,
+.primary-bg h1,
+.primary-bg h2,
+.primary-bg h3,
+.primary-bg a,
+.secondary-bg h1,
+.secondary-bg h2,
+.secondary-bg h3,
+.secondary-bg a {
+  color: var(--whiteish-c);
+}
+
 /* Navigation Bar */
 
 .main-nav {
@@ -200,4 +247,27 @@ h6 {
 
 .hero-content p {
   margin-bottom: 1rem;
+}
+
+/* Content And Articles Section */
+
+.articles-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+.card-span {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  align-items: center;
+  grid-column: 1 / span 2;
+}
+
+.card-span-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column: 2 / span 2;
+  align-items: center;
 }
