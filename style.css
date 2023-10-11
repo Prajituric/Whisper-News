@@ -375,6 +375,10 @@ p {
   font-size: 3rem;
 }
 
+.semi-large-heading {
+  font-size: 2rem;
+}
+
 /* Article Page */
 
 .meta {
